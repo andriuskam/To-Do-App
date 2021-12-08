@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15. užduotis - DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="form">
+        <fieldset>
+            <legend>DOM manipuliation</legend>
+            <form>
+                <div class="formStyle">
+                    <label for="subject">Subject :</label>
+                    <input type="text" name="subject" id="subject">
+                </div>
+                <div class="formStyle">
+                    <label for="priority">Priority :</label>
+                    <select name="priority" id="priority">
+                        <option selected>Choose one. ..</option>
+                        <option>Low</option>
+                        <option>Avarage</option>
+                        <option>High</option>
+                    </select> 
+                </div>
+                <div class="formStyle">
+                    <label for="dueDate">Due date :</label>
+                    <input type="date" name="dueDate" id="dueDate">
+                </div>
+                <div class="formStyle">
+                    <label for="status">Status :</label>
+                    <select name="status" id="staatus">
+                        <option selected>Choose one. ..</option>
+                        <option>New</option>
+                        <option>Started</option>
+                        <option>In progress</option>
+                        <option>Nearly complete</option>
+                        <option>Complete</option>
+                    </select>
+                </div>
+                <div class="formStyle">
+                    <button type="button" id="submitButton" class="submitButton">Submit</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    <section class="table" id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Priority</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Percent competed</th>
+                    <th>Modified on</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </section>
+    <script defer src="index.js"></script>
+</body>
+</html>
